@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.weather.model.JsonData;
-import com.weather.model.Location;
-import com.weather.model.ResultDTO;
+import com.weather.model.JsonData1;
 import com.weather.service.MyService;
 
 @RestController
@@ -21,9 +20,15 @@ public class ForecastController {
 	private MyService myService;
 	
 	@GetMapping("/{cityName}")
-	public ResponseEntity<ResultDTO> getforecastDataforCity(@PathVariable("cityName") String cityName){
+	public ResponseEntity<JsonData> getforecastDataforCity(@PathVariable("cityName") String cityName){
 		
-		return new ResponseEntity<ResultDTO>(myService.getforecastDataByLocationName(cityName), HttpStatus.OK);
+		return new ResponseEntity<JsonData>(myService.getforecastDataByLocationName(cityName), HttpStatus.OK);
+		
+	}
+	@GetMapping("/hourly/{cityName}")
+	public ResponseEntity<JsonData1> getforecastDataForHourlyforCity(@PathVariable("cityName") String cityName){
+		
+		return new ResponseEntity<JsonData1>(myService.getforecastDataHourlyByLocationName(cityName), HttpStatus.OK);
 		
 	}
 	
