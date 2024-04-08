@@ -46,12 +46,6 @@ logging.level.org.springframework.securty=TRACE
 -   Spring Boot
 -   Spring Security
 
-<p>
-   <img src="https://img.icons8.com/color/64/000000/java.png"/>
-   <img src="https://img.icons8.com/color/48/null/spring-logo.png"/>
-</p>
-
-
 
 # Backend
 
