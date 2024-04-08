@@ -32,12 +32,12 @@ spring.security.oauth2.client.registration.google.client-secret={your client sec
 spring.security.oauth2.client.registration.google.redirect-uri={base URL}/login/oauth2/code/google
 logging.level.org.springframework.securty=TRACE
 
-working URL
-1.To get the home page
+-working URL
+-1.To get the home page
 https://forecastapi-production.up.railway.app/forecast/home
-2.To get the summary of forecast
-https://forecastapi-production.up.railway.app/forecast/summary?cityName={cityName}
-3.To get the hourly data of forecast
+-2.To get the summary of forecast
+ https://forecastapi-production.up.railway.app/forecast/summary?cityName={cityName}
+-3.To get the hourly data of forecast
 https://forecastapi-production.up.railway.app/forecast/hourly?cityName={cityName}
 
 # Tech Stacks
