@@ -2,7 +2,7 @@
 
 # Forecast API with Oauth2Login
 
- -In this project all the forecast summary of any city with all details and also summary of hourly data also available.
+- In this project all the forecast summary of any city with all details and also summary of hourly data also available.
 - This project is developed by me.
 
 
